@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zachary Tremblay Portfolio</title>
     <link rel="stylesheet" href="css/dist/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="loader-ripple"><div></div><div></div><div></div></div>
     <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis suscipit accusantium eum quaerat optio cumque saepe dolorem delectus neque, fuga nulla similique veritatis illum praesentium nostrum, aut dolor vero libero.</p>
     <p>yo</p>
     <script>
-        var loader = document.getElementsById("loader-ripple");
-        window.onload = function() {
-            loader.style.display = 'none';
-        }
+            $(window).on('load', function(){
+                $("#loader-ripple").fadeOut(1000);
+                $("#para1").fadeIn(500);
+                console.log("test");
+            });
+        
     </script>
+    
 </body>
 </html>

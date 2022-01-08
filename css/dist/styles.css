@@ -3,6 +3,7 @@
   position: relative;
   width: 15em;
   height: 15em;
+  z-index: 100;
 }
 #loader-ripple div {
   position: absolute;
@@ -57,7 +58,9 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  z-index: 0;
 }
 body #para1 {
-  color: red;
+  color: blue;
+  opacity: 0;
 }
