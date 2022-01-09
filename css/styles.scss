@@ -8,19 +8,35 @@
 }
 
 body{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     background:radial-gradient(rgb(187, 187, 187), white);
 
-    display:flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    z-index: 0;
     #para1 {
         color:blue;
     }
 }
 
+
+.loaded #loader-wrapper {
+    opacity: 0;  
+    transition: all 0.5s cubic-bezier(0.75, 0.1, 0.75, 0.8);
+}
+
+#survey {
+    .row{
+        button{
+            font-size:1.5em;
+            margin:2em;
+            padding:1em;
+            color:blue;
+        }
+    }
+}
