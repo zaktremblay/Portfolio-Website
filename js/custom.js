@@ -3,5 +3,4 @@ $(window).on('load', function(){
     $('body').delay(1000).queue(function(next){
         $(this).addClass('loaded');
     });
-    openPage(1);
 });

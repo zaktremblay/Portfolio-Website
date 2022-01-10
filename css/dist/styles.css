@@ -68,14 +68,11 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Nato Sans", sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 30px;
+  line-height: 10;
   background: radial-gradient(#b6b6b6, white);
   flex-direction: column;
   min-height: 100vh;
-}
-body #para1 {
-  color: blue;
 }
 body .survey {
   position: fixed;
@@ -83,14 +80,13 @@ body .survey {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(white, transparent, transparent);
-  width: 800px;
-  border-radius: 50%;
+  background-image: linear-gradient(transparent, white, white, transparent);
+  width: 100vw;
+  min-height: 75vh;
 }
 body .survey .survey-header {
   padding: 10px 15px;
   margin: 15px;
-  display: flex;
   border-style: solid;
   border-image: linear-gradient(90deg, lightblue, transparent) 1;
   border-top: 0;
