@@ -1,5 +1,6 @@
 @import "scss/_variables";
 @import "scss/_loader";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     box-sizing:border-box;
@@ -12,15 +13,37 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nato Sans', sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    background:radial-gradient(rgb(187, 187, 187), white);
+    background:radial-gradient($themeColor1, white);
 
     flex-direction: column;
     min-height: 100vh;
     #para1 {
         color:blue;
+    }
+    
+    .survey {
+        position: fixed;
+        padding:30px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        background:radial-gradient(white, transparent, transparent);
+        width: 800px;
+        border-radius:50%;
+        .survey-header{
+            padding: 10px 15px;
+            margin: 15px;
+            display:flex;
+            border-style:solid;
+            border-image:linear-gradient(90deg,$themeColor3, transparent) 1;
+            border-top:0;
+            border-left: 0;
+            border-right:0;
+            border-width: 7px;
+        }
     }
 }
 
@@ -30,13 +53,4 @@ body{
     transition: all 0.5s cubic-bezier(0.75, 0.1, 0.75, 0.8);
 }
 
-#survey {
-    .row{
-        button{
-            font-size:1.5em;
-            margin:2em;
-            padding:1em;
-            color:blue;
-        }
-    }
-}
+

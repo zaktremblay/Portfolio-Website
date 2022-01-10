@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 #loader-ripple {
   display: inline-block;
   position: relative;
@@ -66,25 +67,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Nato Sans", sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  background: radial-gradient(#bbbbbb, white);
+  background: radial-gradient(#b6b6b6, white);
   flex-direction: column;
   min-height: 100vh;
 }
 body #para1 {
   color: blue;
 }
+body .survey {
+  position: fixed;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(white, transparent, transparent);
+  width: 800px;
+  border-radius: 50%;
+}
+body .survey .survey-header {
+  padding: 10px 15px;
+  margin: 15px;
+  display: flex;
+  border-style: solid;
+  border-image: linear-gradient(90deg, lightblue, transparent) 1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-width: 7px;
+}
 
 .loaded #loader-wrapper {
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.75, 0.1, 0.75, 0.8);
-}
-
-#survey .row button {
-  font-size: 1.5em;
-  margin: 2em;
-  padding: 1em;
-  color: blue;
 }
