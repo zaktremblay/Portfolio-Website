@@ -9,27 +9,65 @@
 }
 
 body{
-    
     display:flex;
     align-items: center;
     justify-content: center;
     font-family: 'Nato Sans', sans-serif;
-    font-size: 30px;
+    font-size: 14px;
     line-height: 10;
     background:radial-gradient($themeColor1, white);
 
     flex-direction: column;
     min-height: 100vh;
-    
+    z-index:12;
+    :hover{
+        cursor:pointer;
+      }
     .survey {
+        
         position: fixed;
         padding:30px;
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
-        background-image:linear-gradient(transparent,white, white,transparent);
+        background-image:linear-gradient( transparent,white, transparent);
         width: 100vw;
         min-height:75vh;
+        visibility: visible;
+        opacity: 1;
+
+        button{
+            padding:10px;
+            margin:5px 100px;
+            border-color: $themeColor3;
+            color:$themeColor3;
+            border-radius: 12px;
+            background-color: transparent;
+            font-size:1em;
+            z-index:1000;
+            :hover{
+                color: $themeColor3;
+                cursor: pointer;
+            }
+            :before{
+                transition: 0.5s all ease;
+                position:absolute;
+                top:0;
+                bottom:0;
+                left: 50%;
+                right: 50%;
+                opacity: 0;
+                content: "";
+                background-color: $themeColor3;
+                :hover{
+                    transition: 0.5s all ease;
+                    left: 0;
+                    right: 0;
+                    opacity: 1;
+                    z-index: -1;
+                }
+            }
+        }
         .survey-header{
             padding: 10px 15px;
             margin: 15px;
